@@ -1,0 +1,28 @@
+.inputs{
+    display: flex;
+    padding: 1rem;
+}
+.inputs fieldset{
+    border-radius: 10px;
+}
+
+.inputs input{
+    height: 5vh;
+    font-size: large;
+    text-align: center;
+    width: 80%;
+}
+
+.buttons{
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons div{
+    margin: 1rem;
+}
+
+.buttons div btn{
+    border: none;
+    border-radius: 20px;
+}
