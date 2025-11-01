@@ -2,8 +2,10 @@
   "name": "stocktrade",
   "version": "1.0.0",
   "main": "index.js",
+  
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "echo no build needed"
   },
   "author": "aminur",
   "license": "ISC",
