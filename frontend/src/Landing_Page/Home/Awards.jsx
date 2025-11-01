@@ -1,4 +1,4 @@
-import LargestBroker from '../assets/LargestBroker.svg';
+import LargestBroker from '../assets/largestBroker.png';
 import pressLogos from '../assets/pressLogos.png';
 
 export default function Awards() {
