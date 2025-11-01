@@ -11,7 +11,7 @@ export default function SellActionWindow({uid}){
     const [stockPrice, setStockPrice] = useState(0.0);
     
     const handleSellClick = () => {
-        axios.post('http://localhost:3002/newOrder', {
+        axios.post('https://trading-platform-backend-t0xv.onrender.com/newOrder', {
             name: uid,
             qty: stockQuantity,
             price: stockPrice,

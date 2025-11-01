@@ -14,7 +14,7 @@ export default function SignUp() {
             return;
         }
         try {
-            const res = await fetch('http://localhost:3002/send-otp', {
+            const res = await fetch(`https://trading-platform-backend-t0xv.onrender.com/send-otp`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -37,7 +37,7 @@ export default function SignUp() {
     }
     const handleVerifyOtp = async (req, res) => {
         try {
-            const res = await fetch('http://localhost:3002/verify-otp', {
+            const res = await fetch(`https://trading-platform-backend-t0xv.onrender.com/verify-otp`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -49,7 +49,7 @@ export default function SignUp() {
             if (data.success) {
                 setMessage("OTP verified successfully");
                 setTimeout(() => {
-                    window.location.href = 'http://localhost:5174/';
+                    window.location.href = 'https://trading-platform-dashboard-v5rp.onrender.com';
                 }, 1000);
             } else {
                 setMessage("Failed: " + data.message);
